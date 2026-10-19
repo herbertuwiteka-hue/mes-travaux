@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let notes = [];
+
+            for (let i = 0; i < 60; i++) {
+        let note = parseFloat(prompt("Entrez la note n°" + (i + 1) + " (entre 0 et 20) :"));
+
+            while (isNaN(note) || note < 0 || note > 20) {
+            note = parseFloat(prompt("Erreur. Entrez la note n°" + (i + 1) + " entre 0 et 20 :"));
+            }
+
+            notes[i] = note;
+            }
+
+        for (let i = 0; i < 60; i++) {
+        if (notes[i] > 12) {
+            console.log(notes[i]);
+        }
+        }
+    </script>
+    
+</body>
+</html>
