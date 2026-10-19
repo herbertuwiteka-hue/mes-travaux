@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Entrez le premier entier :"));
+        let b = parseInt(prompt("Entrez le deuxième entier :"));
+        let choix;
+
+        do {
+        choix = parseInt(prompt(
+            "Menu :\n-1 Arrêt\n0 Réinitialiser\n1 Somme\n2 Différence\n3 Produit\n4 Quotient\n5 Reste"
+        ));
+
+        if (choix === 0) {
+            a = parseInt(prompt("Entrez le premier entier :"));
+            b = parseInt(prompt("Entrez le deuxième entier :"));
+        } 
+        else if (choix === 1) {
+            console.log(a + " + " + b + " = " + (a + b));
+        } 
+        else if (choix === 2) {
+            console.log(a + " - " + b + " = " + (a - b));
+        } 
+        else if (choix === 3) {
+            console.log(a + " x " + b + " = " + (a * b));
+        } 
+        else if (choix === 4) {
+            if (b === 0) {
+            console.log("Erreur : division par zéro");
+            }
+        else {
+            console.log(a + " / " + b + " = " + (a / b));
+            }
+        } 
+        else if (choix === 5) {
+            if (b === 0) {
+            console.log("Erreur : division par zéro");
+            }
+         else {
+            console.log(a + " % " + b + " = " + (a % b));
+            }
+        }
+         else if (choix !== -1) {
+            console.log("Choix invalide");
+        }
+        } while (choix !== -1);
+
+        console.log("Fin du programme");
+        
+    </script>
+    
+</body>
+</html>
