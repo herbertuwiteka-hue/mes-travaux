@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mois = parseInt(prompt("Entrez le numéro du mois (1 à 12) :"));
+        let annee = parseInt(prompt("Entrez l'année :"));
+
+        let nom;
+        let jours;
+
+        if (mois === 1) {
+        nom = "Janvier";
+        jours = 31;
+        } else if (mois === 2) {
+        nom = "Février";
+        if ((annee % 4 === 0 && annee % 100 !== 0) || annee % 400 === 0) {
+            jours =28 & 29;
+        } else {
+            jours = 28;
+        }
+        } else if (mois === 3) {
+        nom = "Mars";
+        jours = 31;
+        } else if (mois === 4) {
+        nom = "Avril";
+        jours = 30;
+        } else if (mois === 5) {
+        nom = "Mai";
+        jours = 31;
+        } else if (mois === 6) {
+        nom = "Juin";
+        jours = 30;
+        } else if (mois === 7) {
+        nom = "Juillet";
+        jours = 31;
+        } else if (mois === 8) {
+        nom = "Août";
+        jours = 31;
+        } else if (mois === 9) {
+        nom = "Septembre";
+        jours = 30;
+        } else if (mois === 10) {
+        nom = "Octobre";
+        jours = 31;
+        } else if (mois === 11) {
+        nom = "Novembre";
+        jours = 30;
+        } else if (mois === 12) {
+        nom = "Décembre";
+        jours = 31;
+        }
+
+        if (nom === undefined) {
+            console.log("Erreur : le numéro du mois est invalide");
+        } else {
+            console.log(nom + " " + annee + " a " + jours + " jours");
+        }
+    </script>
+    
+</body>
+</html>
