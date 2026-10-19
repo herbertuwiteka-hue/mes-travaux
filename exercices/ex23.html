@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=(prompt("entre le premiere entier(ou null) :"))
+         while (isNaN(a) || a === 0) {
+            a = parseInt(prompt("Erreur. Entrez le premier entier(ou null) :"));
+            }
+        let b=(prompt("entre le deuxieme entier(ou null)"))
+         while (isNaN(b) || b === 0) {
+            b = parseInt(prompt("Erreur. Entrez le deuxieme entier(ou null) :"));
+            }
+        if(a%b===0){
+            console.log(a+"est divisible par"+b);
+        }
+        else if(b%a){
+            console.log(b+"est divisible par"+a);
+        }
+        else{
+            console.log("aucun des deux n'est divisible par l'autre")
+        }
+    </script>
+    
+</body>
+</html>
