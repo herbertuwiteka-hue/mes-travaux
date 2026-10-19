@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Entrez un entier positif :"));
+
+            while (isNaN(n) || n < 0) {
+            n = parseInt(prompt("Erreur. Entrez un entier positif :"));
+            }
+
+        let f = 1;
+
+        for (let i = 1; i <= n; i++) {
+        f = f * i;
+        }
+            console.log(n + "! = " + f);
+    </script>
+    
+</body>
+</html>
