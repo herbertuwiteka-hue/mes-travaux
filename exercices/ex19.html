@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Entrez un entier supérieur à 100 :"));
+
+            while (isNaN(n) || n <= 100) {
+            n = parseInt(prompt("Erreur. Entrez un entier supérieur à 100 :"));
+            }
+
+            while (n > 0) {
+                console.log(n % 10);
+            n = Math.floor(n / 10);
+            }
+    </script>
+    
+</body>
+</html>
