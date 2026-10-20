@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+       let code=(prompt("entre code secret (entier):"))
+        
+       while(isNaN(code)){
+        code=(prompt("erreur.entre le code secret(entier)"));
+       }
+
+       let tentatives=0 ;
+       let trouve=false;
+
+       while(tentatives < 10 && !trouve){
+        let essai=(prompt("deviner le code :"));
+        tentatives++;
+        if (essai===code)
+        trouve=true;
+        else {
+            console.log("echec.essais restant:"+(10-tentatives));
+        }
+       }
+       if(trouve){
+        console.log("bravo ! code trouve en "+tentatives+"essai(s)")
+       }
+       else {
+        console.log("Perdu ! Le code secret était " + code);
+        }
+       </script>
+    
+</body>
+</html>
