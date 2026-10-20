@@ -7,6 +7,7 @@
 </head>
 <body>
     <script>
+        let resultat=1;
         let e=(prompt("entre l'entier e :"))
 
         while(isNaN(e)){
@@ -17,11 +18,11 @@
         while(isNaN(x) || x < 0){
             x=(prompt("erreur.entre l'entier x(entier positif) :"))
         }
-        let restant=1;
+        
         for(let i=1;i<=x;i++){
-            resultat=resultat*e;
+            resultat = resultat * e;
         }
-        console.log(e="^"+x+"="+resultat);
+        console.log(e+"^"+x+"="+resultat);
     </script>
     
 </body>
