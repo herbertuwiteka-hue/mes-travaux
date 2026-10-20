@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombres = [];
+
+        for (let i = 0; i < 30; i++) {
+        let valeur = parseInt(prompt("Entrez l'entier n°" + (i + 1) + " :"));
+
+        while (isNaN(valeur)) {
+            valeur = parseInt(prompt("Erreur. Entrez l'entier n°" + (i + 1) + " :"));
+        }
+
+        nombres[i] = valeur;
+        }
+
+        let x = parseInt(prompt("Entrez l'entier à chercher :"));
+
+        while (isNaN(x)) {
+        x = parseInt(prompt("Erreur. Entrez l'entier à chercher :"));
+        }
+
+        let compteur = 0;
+
+        for (let i = 0; i < 30; i++) {
+        if (nombres[i] === x) {
+            compteur++;
+        }
+        }
+
+        console.log(x + " apparaît " + compteur + " fois");
+    </script>
+    
+</body>
+</html>
