@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n=(prompt("entre un entier superieur a 10"))
+        while (isNaN(n) || n <= 10) {
+            n = parseInt(prompt("Erreur. Entrez superieur a 10 :"));
+        }
+        let premier=true
+
+        for (let i=3;i<n;i++){
+            if (n % 1 === 0){
+                premier=false
+            }        
+        } 
+        if (premier){
+            console.log("il n'est pas un nombre premier")
+        }
+        else {
+            console.log("il est un nombre premier")
+        }
+    </script>
+    
+</body>
+</html>
