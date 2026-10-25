@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let reussis = 0;
+
+        for (let i = 0; i < 50; i++) {
+        let note =(prompt("Entrez la note de l'étudiant n°" + (i + 1) + " (entre 0 et 20) :"));
+
+        while (isNaN(note) || note < 0 || note > 20) {
+            note =(prompt("Erreur. Entrez la note de l'étudiant n°" + (i + 1) + " entre 0 et 20 :"));
+        }
+
+        if (note >= 10) {
+            reussis++;
+        }
+        }
+
+        let pourcentage = (reussis / 50) * 100;
+
+            console.log("Nombre d'étudiants ayant réussi : " + reussis);
+            console.log("Pourcentage de réussite : " + pourcentage + " %");
+    </script>
+    
+</body>
+</html>
