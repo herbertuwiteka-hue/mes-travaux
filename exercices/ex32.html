@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for (let x=10; x<=100; x++){
+            let premier= true;
+            for (let n=2; n<x; n++){
+                if (x % n === 0){
+                    premier=false;
+                }
+            }
+            if(premier){
+                console.log(x)
+            }
+        }
+    </script>
+    
+</body>
+</html>
