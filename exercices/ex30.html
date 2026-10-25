@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombres = [];
+
+        for (let i = 0; i < 40; i++) {
+        let valeur =(prompt("Entrez l'entier n°" + (i + 1) + " :"));
+
+        while (isNaN(valeur)) {
+            valeur =(prompt("Erreur. Entrez l'entier n°" + (i + 1) + " :"));
+        }
+
+        nombres[i] = valeur;
+        }
+
+        let x =(prompt("Entrez l'entier à chercher :"));
+
+        while (isNaN(x)) {
+        x =(prompt("Erreur. Entrez l'entier à chercher :"));
+        }
+
+        let existe = false;
+
+        for (let i = 0; i < 40; i++) {
+        if (nombres[i] === x) {
+            existe = true;
+        }
+        }
+
+        if (existe) {
+            console.log(x + " existe parmi les 40 entiers");
+        } else {
+            console.log(x + " n'existe pas parmi les 40 entiers");
+        }
+    </script>
+    
+</body>
+</html>
